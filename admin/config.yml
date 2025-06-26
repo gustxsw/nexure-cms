@@ -1,31 +1,11 @@
 backend:
   name: github
-  repo: gustxsw/nexure-cms
+  repo: gustxsw/nexure-cms # seu repositório
   branch: main
-  auth_scope: repo
+  auth_type: oauth
+  app_id: Ov23liJP0b0tXqjcMTfz
+  base_url: https://coruscating-belekoy-9e312a.netlify.app
+  auth_endpoint: /api/auth
 
 media_folder: "images"
 public_folder: "/images"
-
-collections:
-  - name: "home"
-    label: "Página Inicial"
-    files:
-      - file: "content/home.md"
-        label: "Conteúdo da Home"
-        name: "home"
-        fields:
-          - { label: "Headline", name: "headline", widget: "string" }
-          - { label: "Subheadline", name: "subheadline", widget: "string" }
-          - {
-              label: "Benefícios",
-              name: "benefits",
-              widget: "list",
-              field: { label: "Texto", name: "benefit", widget: "string" },
-            }
-          - label: "Planos"
-            name: "planos"
-            widget: "list"
-            fields:
-              - { label: "Nome", name: "nome", widget: "string" }
-              - { label: "Descrição", name: "descricao", widget: "string" }
