@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #111;
+}
+header {
+  background: #1b1b1b;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #0f62fe;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+#benefits-list {
+  list-style: none;
+  padding: 0;
+}
+#benefits-list li {
+  margin: 10px 0;
+}
+#planos-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
