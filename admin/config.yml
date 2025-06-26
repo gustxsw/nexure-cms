@@ -1,6 +1,8 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: gustxsw/nexure-cms
   branch: main
+  auth_scope: repo
 
 media_folder: "images"
 public_folder: "/images"
@@ -15,7 +17,12 @@ collections:
         fields:
           - { label: "Headline", name: "headline", widget: "string" }
           - { label: "Subheadline", name: "subheadline", widget: "string" }
-          - { label: "Benefícios", name: "benefits", widget: "list", field: { label: "Texto", name: "benefit", widget: "string" } }
+          - {
+              label: "Benefícios",
+              name: "benefits",
+              widget: "list",
+              field: { label: "Texto", name: "benefit", widget: "string" },
+            }
           - label: "Planos"
             name: "planos"
             widget: "list"
